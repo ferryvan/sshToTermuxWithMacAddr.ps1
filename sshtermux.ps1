@@ -25,7 +25,7 @@ else
     Write-Output "Device not found in Arp Cache"
     Write-Output "Trying host discovey on 192.168.1.2-253"
     Write-Output "---------------------------------------"
-    $str2 = nmap -n -p ${port} -PS 192.168.1.2-253
+    nmap -r -n -PR -sn 192.168.1.2-253 --max-rate 100 --min-hostgroup 4 --min-parallelism 1024 --host-timeout 30 | Tee-Object -Variable str2
     $str2
     #nmap -n -Pn -T4 -p ${port} 192.168.1.2-253
     Write-Output "---------------------------------------"
