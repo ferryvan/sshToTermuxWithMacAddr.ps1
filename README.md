@@ -16,6 +16,12 @@ Use:
 - change SETTINGS and ./sshtermux.ps1
 - make sure that your termux sshd is online
 
+Other:
+- all this directory to $PATH
+- New-Alias -Name 'tm' -Value 'sshtermux.ps1'
+- now you can use the commond "tm" to connect to your termux
+
+
 enjoy!
 ```
 
