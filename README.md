@@ -6,20 +6,20 @@ A Powershell script to ssh to your termux using MAC Addr
 
 1. Search MAC Addr in Arp Cache
 2. Try host discovey on 192.168.1.2-253 (using nmap)
-3. Ssh ip -p port
+3. `ssh ip -p port`
 
 Need: 
 - nmap for windows >= 7.80 (https://nmap.org)
 - powershell >= 7 (https://microsoft.com/PowerShell)
 
 Use: 
-- change SETTINGS and ./sshtermux.ps1
-- make sure that your termux sshd is online
+- change SETTINGS and `./sshtermux.ps1`
+- make sure that your termux `sshd` is online
 
 Other:
-- all this directory to $PATH
-- New-Alias -Name 'tm' -Value 'sshtermux.ps1'
-- now you can use the commond "tm" to connect to your termux
+- add this directory to $PATH
+- `New-Alias -Name 'tm' -Value 'sshtermux.ps1'`
+- now you can use the commond `tm` to connect to your termux
 
 
 enjoy!
